@@ -5,6 +5,7 @@ import Model.Car;
 import Model.Motorbike;
 import Model.Truck;
 import Model.Vehicle;
+import Repository.IRepo;
 import Repository.Repo;
 import Validations.Validate;
 
@@ -12,7 +13,7 @@ import java.util.Arrays;
 import java.util.Locale;
 
 public class Controller {
-    private Repo repo;
+    private IRepo repo;
 
     public Controller(int length) {
         this.repo = new Repo(length);
@@ -27,23 +28,20 @@ public class Controller {
 
         if (Validate.enoughParams(args, 3) && Validate.validCarType(args[0]) && Validate.isNumber(args[2])) {
             switch (args[0].toLowerCase(Locale.ROOT)) {
-                case "car": {
+                case "car" -> {
                     Car car = new Car(args[1], Integer.parseInt(args[2]));
                     this.repo.addVehicle(car);
-                    break;
                 }
-                case "truck": {
+                case "truck" -> {
                     Truck t = new Truck(args[1], Integer.parseInt(args[2]));
                     this.repo.addVehicle(t);
-                    break;
                 }
-                case "motorbike": {
+                case "motorbike" -> {
                     Motorbike m = new Motorbike(args[1], Integer.parseInt(args[2]));
                     this.repo.addVehicle(m);
-                    break;
                 }
-                default:
-                    break;
+                default -> {
+                }
             }
         }
     }
