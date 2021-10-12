@@ -50,6 +50,8 @@ public class Controller {
         // validation
         if (Validate.enoughParams(args, 1) && Validate.isNumber(args[0])) {
             int index = Integer.parseInt(args[0]);
+            if (index >= this.repo.getLength())
+                throw new CustomException("Index out of bounds.");
             this.repo.removeVehicle(index);
         }
 
@@ -59,6 +61,9 @@ public class Controller {
         // validation
         if (Validate.enoughParams(args, 2) && Validate.isNumber(args[0]) && Validate.isNumber(args[1])) {
             int index = Integer.parseInt(args[0]);
+            if (index >= this.repo.getLength())
+                throw new CustomException("Index out of bounds.");
+
             int newPrice = Integer.parseInt(args[1]);
 
             this.repo.updateVehicle(index, newPrice);
