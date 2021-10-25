@@ -1,5 +1,8 @@
 package Model.adt;
 
+import Exceptions.EmptyListException;
+import Exceptions.ListException;
+
 import java.util.*;
 
 public class MyList<T> implements IList<T> {
@@ -15,7 +18,11 @@ public class MyList<T> implements IList<T> {
     }
 
     @Override
-    public T pop() {
+    public T pop() throws Exception{
+        if (this.size() == 0) {
+            throw new EmptyListException("The list is empty");
+        }
+
         return this.list.remove(list.size() - 1);
     }
 
@@ -28,7 +35,10 @@ public class MyList<T> implements IList<T> {
     }
 
     @Override
-    public T getValue(int position) {
+    public T getValue(int position) throws Exception {
+        if (position > this.size()) {
+            throw new ListException("The position does not exists.");
+        }
         return this.list.get(position);
     }
 

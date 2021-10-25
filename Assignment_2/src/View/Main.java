@@ -62,7 +62,7 @@ public class Main {
                                             new AssignStmt("v", new ValueExp(new IntValue(3)))), new PrintStmt(new
                             VarExp("v"))))));
                     break;
-                case "4":
+                case "0":
                     exit = true;
                     break;
             }

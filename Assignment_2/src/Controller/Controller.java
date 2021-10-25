@@ -1,4 +1,5 @@
 package Controller;
+import Exceptions.StackEmptyException;
 import Model.PrgState;
 import Model.adt.IStack;
 import Model.stmt.IStmt;
@@ -21,7 +22,7 @@ public class Controller {
     public PrgState oneStep(PrgState state) throws Exception {
         IStack<IStmt> stack = state.getStack();
         if (stack.isEmpty())
-            throw new Exception("PrgState stack is empty.");
+            throw new StackEmptyException("PrgState stack is empty.");
         IStmt currentStmt = stack.pop();
         return currentStmt.execute(state);
     }

@@ -1,5 +1,6 @@
 package Model.adt;
 import Exceptions.UndefinedException;
+import Exceptions.VariableDefinedException;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -17,7 +18,7 @@ public class Dict<T1,T2> implements IDict<T1,T2> {
     public void add(T1 v1, T2 v2) throws Exception{
         if (!isDefined(v1)) {
             dictionary.put(v1, v2);
-        } else throw new UndefinedException("Variable already defined");
+        } else throw new VariableDefinedException("Variable already defined");
     }
 
     @Override
