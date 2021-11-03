@@ -12,7 +12,7 @@ public class Repo implements IRepo {
     }
 
     @Override
-    public PrgState getCrtPrg() {
+    public PrgState getCrtPrg() throws Exception {
         return myPrgStates.pop();
     }
 

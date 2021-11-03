@@ -27,17 +27,14 @@ public class Controller {
         return currentStmt.execute(state);
     }
 
-    public void allStep() {
-        PrgState prg = this.repo.getCrtPrg();
-        IStack<IStmt> stack = prg.getStack();
-        try {
+    public void allStep() throws Exception{
+            PrgState prg = this.repo.getCrtPrg();
+            IStack<IStmt> stack = prg.getStack();
+
             System.out.println(prg.toString());
             while (!stack.isEmpty()) {
                 oneStep(prg);
                 System.out.println(prg.toString());
             }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
      }
 }

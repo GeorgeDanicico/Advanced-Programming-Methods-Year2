@@ -66,15 +66,18 @@ public class Main {
                     exit = true;
                     break;
             }
-
-            if (originalProgram != null) {
-                IStack<IStmt> exeStack = new MyStack<IStmt>();
-                exeStack.push(originalProgram);
-                IDict<String, IValue> symTable = new Dict<String, IValue>();
-                IList<IValue> out = new MyList<IValue>();
-                PrgState myPrgState = new PrgState(exeStack, symTable, out, originalProgram);
-                myController.addProgram(myPrgState);
-                myController.allStep();
+            try {
+                if (originalProgram != null) {
+                    IStack<IStmt> exeStack = new MyStack<IStmt>();
+                    exeStack.push(originalProgram);
+                    IDict<String, IValue> symTable = new Dict<String, IValue>();
+                    IList<IValue> out = new MyList<IValue>();
+                    PrgState myPrgState = new PrgState(exeStack, symTable, out, originalProgram);
+                    myController.addProgram(myPrgState);
+                    myController.allStep();
+                }
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
         }
 
