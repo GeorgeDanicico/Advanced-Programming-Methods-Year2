@@ -14,16 +14,16 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class openRFileStmt implements IStmt{
+public class OpenRFileStmt implements IStmt{
     private Exp exp;
 
-    public openRFileStmt(Exp _exp) {
+    public OpenRFileStmt(Exp _exp) {
         exp = _exp;
     }
 
     @Override
     public String toString() {
-        return "(open_file)";
+        return "(open_file '" + this.exp +"')";
     }
 
     @Override

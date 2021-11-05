@@ -11,11 +11,16 @@ import Model.value.StringValue;
 
 import java.io.BufferedReader;
 
-public class closeRFileStmt implements IStmt{
+public class CloseRFileStmt implements IStmt{
     private final Exp exp;
 
-    public closeRFileStmt(Exp _exp) {
+    public CloseRFileStmt(Exp _exp) {
         exp = _exp;
+    }
+
+    @Override
+    public String toString() {
+        return "(close file '" + this.exp +"')";
     }
 
     @Override

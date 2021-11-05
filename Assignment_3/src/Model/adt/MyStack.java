@@ -1,6 +1,7 @@
 package Model.adt;
 import Exceptions.StackEmptyException;
 
+import java.util.ArrayList;
 import java.util.Stack;
 
 public class MyStack<T> implements IStack<T>{
@@ -8,6 +9,10 @@ public class MyStack<T> implements IStack<T>{
 
     public MyStack() {
         stack = new Stack<T>();
+    }
+
+    public MyStack(Stack<T> _stack) {
+        stack = (Stack<T>) _stack.clone();
     }
 
     @Override
@@ -27,12 +32,29 @@ public class MyStack<T> implements IStack<T>{
     public boolean isEmpty() {
         return this.stack.empty();
     }
-
+    @Override
     public String toString() {
         return stack.toString();
     }
 
+    @Override
     public String toFile() {
-        return "";
+        MyStack<T> copyStack = (MyStack<T>) this.deepCopy();
+        String result = "";
+        try {
+            while (!copyStack.isEmpty()) {
+                T elem = copyStack.pop();
+                result += elem.toString() + "\n";
+            }
+        } catch (Exception e) {
+
+        }
+
+        return result;
+    }
+
+    @Override
+    public IStack<T> deepCopy() {
+        return new MyStack<T>(this.stack);
     }
 }

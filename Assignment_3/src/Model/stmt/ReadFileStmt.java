@@ -15,18 +15,18 @@ import Model.value.StringValue;
 
 import java.io.BufferedReader;
 
-public class readFileStmt implements IStmt{
+public class ReadFileStmt implements IStmt{
     private final String var_name;
     private final Exp exp;
 
-    public readFileStmt(String _var_name, Exp _exp) {
+    public ReadFileStmt(Exp _exp, String _var_name) {
         var_name = _var_name;
         exp = _exp;
     }
 
     @Override
     public String toString() {
-        return "(read_file)";
+        return "(read_file' " + this.exp +"')";
     }
 
     @Override

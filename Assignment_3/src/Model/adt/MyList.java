@@ -68,6 +68,16 @@ public class MyList<T> implements IList<T> {
     }
 
     @Override
+    public String toFile() {
+        String result = "";
+        Iterator<T> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            result += iterator.next() + "\n";
+        }
+        return result;
+    }
+
+    @Override
     public T get(int index) throws Exception{
         if (index >= this.list.size()) {
             throw new OutOfBoundsException("Trying to access uninitialized memory.");

@@ -1,54 +1,66 @@
 ExeStack: 
-[((v = int); (v=2; (v)))]
+((v = int); (v=2; (v)))
+
 SymTable: 
-{}
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[(v=2; (v)), (v = int)]
+(v = int)
+(v=2; (v))
+
 SymTable: 
-{}
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[(v=2; (v))]
+(v=2; (v))
+
 SymTable: 
-{v=0}
+v -> 0
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[(v), v=2]
+v=2
+(v)
+
 SymTable: 
-{v=0}
+v -> 0
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[(v)]
+(v)
+
 SymTable: 
-{v=2}
+v -> 2
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[]
+
 SymTable: 
-{v=2}
+v -> 2
+
 Out: 
-[2]
+2
+
 FileTable: 
-{}
+
 

@@ -9,6 +9,7 @@ public interface IList<T> {
     T pop() throws Exception;
     T peek() throws Exception;
     String toString();
+    String toFile();
     T getValue(int position) throws Exception;
     boolean empty();
     void clear();

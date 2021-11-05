@@ -7,5 +7,7 @@ public interface IStack<T> {
     void push(T v);
     boolean isEmpty();
     String toString();
+    String toFile();
+    IStack<T> deepCopy();
 }
 

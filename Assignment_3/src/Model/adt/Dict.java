@@ -53,6 +53,18 @@ public class Dict<T1,T2> implements IDict<T1,T2> {
     }
 
     @Override
+    public String toFile() {
+        String result = "";
+        Set<T1> keys = dictionary.keySet();
+
+        for(T1 key : keys) {
+            result = result + key + " -> " + dictionary.get(key) + "\n";
+        }
+
+        return result;
+    }
+
+    @Override
     public Collection<T2> values()
     {
         return dictionary.values();

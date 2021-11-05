@@ -10,5 +10,6 @@ public interface IDict<T1,T2>{
     T2 lookup(T1 id) throws Exception;
     boolean isDefined(T1 id);
     String toString();
+    String toFile();
     Collection<T2> values();
 }

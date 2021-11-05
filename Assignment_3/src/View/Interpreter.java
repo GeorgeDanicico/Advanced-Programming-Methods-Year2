@@ -45,9 +45,15 @@ class Interpreter {
                         new AssignStmt("v", new ValueExp(new IntValue(3)))), new PrintStmt(new
                         VarExp("v"))))));
 
-        IStmt ex4 = new CompStmt(new VarDeclStmt("varf", new StringType()), new CompStmt(new AssignStmt("varf",
-                new ValueExp(new StringValue("fisier.txt"))),new CompStmt(new openRFileStmt(new VarExp("varf")),
-                new closeRFileStmt(new VarExp("varf")))));
+        IStmt ex4 = new CompStmt(new VarDeclStmt("varf", new StringType()),
+                new CompStmt(new AssignStmt("varf", new ValueExp(new StringValue("fisier.txt"))),
+                        new CompStmt(new OpenRFileStmt(new VarExp("varf")),
+                                new CompStmt(new VarDeclStmt("varc", new IntType()),
+                                        new CompStmt(new ReadFileStmt(new VarExp("varf"), "varc"),
+                                                new CompStmt(new PrintStmt(new VarExp("varc")),
+                                                        new CompStmt(new ReadFileStmt(new VarExp("varf"), "varc"),
+                                                                new CompStmt(new PrintStmt(new VarExp("varc")),
+                                                                        new CloseRFileStmt(new VarExp("varf"))))))))));
 
         IStack<IStmt> exeStack1 = new MyStack<IStmt>();
         exeStack1.push(ex1);

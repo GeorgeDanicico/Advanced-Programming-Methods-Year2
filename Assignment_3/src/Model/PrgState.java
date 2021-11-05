@@ -48,7 +48,7 @@ public class PrgState {
     }
 
     public String toFile() {
-        return "ExeStack: \n" + exeStack.toString() + "\n" + "SymTable: \n" + symTable.toString() + "\n" +
-                "Out: \n" + out.toString() + "\n" + "FileTable: \n" + fileTable.toString() + "\n\n";
+        return "ExeStack: \n" + exeStack.toFile() + "\n" + "SymTable: \n" + symTable.toFile() + "\n" +
+                "Out: \n" + out.toFile() + "\n" + "FileTable: \n" + fileTable.toFile() + "\n\n";
     }
 }
