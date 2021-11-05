@@ -1,0 +1,63 @@
+ExeStack: 
+[((varf = string); (varf='fisier.txt'; ((open_file); Model.stmt.closeRFileStmt@37a71e93)))]
+SymTable: 
+{}
+Out: 
+[]
+FileTable: 
+{}
+
+ExeStack: 
+[(varf='fisier.txt'; ((open_file); Model.stmt.closeRFileStmt@37a71e93)), (varf = string)]
+SymTable: 
+{}
+Out: 
+[]
+FileTable: 
+{}
+
+ExeStack: 
+[(varf='fisier.txt'; ((open_file); Model.stmt.closeRFileStmt@37a71e93))]
+SymTable: 
+{varf=''}
+Out: 
+[]
+FileTable: 
+{}
+
+ExeStack: 
+[((open_file); Model.stmt.closeRFileStmt@37a71e93), varf='fisier.txt']
+SymTable: 
+{varf=''}
+Out: 
+[]
+FileTable: 
+{}
+
+ExeStack: 
+[((open_file); Model.stmt.closeRFileStmt@37a71e93)]
+SymTable: 
+{varf='fisier.txt'}
+Out: 
+[]
+FileTable: 
+{}
+
+ExeStack: 
+[Model.stmt.closeRFileStmt@37a71e93, (open_file)]
+SymTable: 
+{varf='fisier.txt'}
+Out: 
+[]
+FileTable: 
+{}
+
+ExeStack: 
+[Model.stmt.closeRFileStmt@37a71e93]
+SymTable: 
+{varf='fisier.txt'}
+Out: 
+[]
+FileTable: 
+{'fisier.txt'=java.io.BufferedReader@1a86f2f1}
+
