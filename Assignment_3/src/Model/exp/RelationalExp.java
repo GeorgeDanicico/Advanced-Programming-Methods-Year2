@@ -19,6 +19,11 @@ public class RelationalExp extends Exp{
     }
 
     @Override
+    public String toString() {
+        return "(" + e1.toString() + " " + operator + " " + e2.toString() + ")";
+    }
+
+    @Override
     public IValue eval(IDict<String, IValue> symTable) throws Exception {
         IValue v1 = e1.eval(symTable);
 
@@ -51,10 +56,5 @@ public class RelationalExp extends Exp{
             throw new VariableTypeException("Operand 1 is not an integer.\n");
         }
         return new BoolValue();
-    }
-
-    @Override
-    public String toString() {
-        return null;
     }
 }
