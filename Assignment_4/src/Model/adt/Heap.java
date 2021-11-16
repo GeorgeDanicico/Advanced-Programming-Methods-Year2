@@ -1,19 +1,18 @@
 package Model.adt;
+import java.lang.Integer;
 
-import Model.value.IValue;
-
-public class Heap<T1> extends Dict<Integer, T1>{
-    private int freePosition;
+public class Heap<T1, T2> extends Dict<T1, T2>{
+    private Integer freePosition;
 
     public Heap() {
         super();
         freePosition = 1;
     }
 
-    public int add(T1 value) {
-        if (!this.isDefined(freePosition)) {
+    public int add(T2 value) {
+        if (!this.isDefined((T1)freePosition)) {
             int copy_freePos = freePosition;
-            this.dictionary.put(freePosition, value);
+            this.dictionary.put((T1)freePosition, value);
             // increase the free position
             getNextFreeAddress();
 

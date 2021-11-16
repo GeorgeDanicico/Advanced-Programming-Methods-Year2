@@ -1,8 +1,5 @@
 package Model;
-import Model.adt.IDict;
-import Model.adt.IList;
-import Model.adt.IStack;
-import Model.adt.MyList;
+import Model.adt.*;
 import Model.stmt.CompStmt;
 import Model.stmt.IStmt;
 import Model.value.IValue;
@@ -46,6 +43,7 @@ public class PrgState {
     public void setOutput(IList<IValue> output) {
         this.out = output;
     }
+
 
     public String toString() {
         return "Stack: " + exeStack.toString() + "\n" + "SymTable: " + symTable.toString() + "\n" +

@@ -12,7 +12,7 @@ public class VarExp extends Exp{
     }
 
     @Override
-    public IValue eval(IDict<String, IValue> symTable, Heap<IValue> heapTable) throws Exception {
+    public IValue eval(IDict<String, IValue> symTable, Heap<Integer, IValue> heapTable) throws Exception {
         return symTable.lookup(id);
     }
 

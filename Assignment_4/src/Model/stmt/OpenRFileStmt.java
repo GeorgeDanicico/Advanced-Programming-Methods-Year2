@@ -32,7 +32,7 @@ public class OpenRFileStmt implements IStmt{
 
         IDict<StringValue, BufferedReader> fileTable = state.getFileTable();
         IDict<String, IValue> symTbl = state.getSymTable();
-        Heap<IValue> heapTbl = (Heap<IValue>) state.getHeapTable();
+        Heap<Integer, IValue> heapTbl = (Heap<Integer, IValue>) state.getHeapTable();
 
         IValue condition = exp.eval(symTbl, heapTbl);
 

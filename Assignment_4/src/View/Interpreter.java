@@ -1,9 +1,6 @@
 package View;
 import Model.adt.*;
-import Model.exp.ArithExp;
-import Model.exp.ReadHeapExp;
-import Model.exp.VarExp;
-import Model.exp.ValueExp;
+import Model.exp.*;
 import Model.stmt.*;
 import Model.types.BoolType;
 import Model.types.IntType;
@@ -75,12 +72,25 @@ class Interpreter {
                                     new PrintStmt(new ArithExp('+', new ValueExp(new IntValue(5)),
                                             new ReadHeapExp(new VarExp("v"))))))));
 
+        IStmt ex8 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
+                new CompStmt(new NewStmt("v", new ValueExp(new IntValue(20))),
+                        new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
+                                new CompStmt(new NewStmt("a", new VarExp("v")),
+                                        new CompStmt(new NewStmt("v", new ValueExp(new IntValue(30))),
+                                                new PrintStmt(new ReadHeapExp(new ReadHeapExp(new VarExp("a")))))))));
+
+        IStmt ex9 = new CompStmt(new VarDeclStmt("v",new IntType()),new CompStmt(new AssignStmt("v",new ValueExp(new IntValue(4))),
+                new CompStmt(new WhileStmt(new RelationalExp(new VarExp("v"),new ValueExp(new IntValue(0)),">"),
+                        new CompStmt(new PrintStmt(new VarExp("v")), new AssignStmt("v",new ArithExp('-',
+                                new VarExp("v"), new ValueExp(new IntValue(1)))))),
+                                    new PrintStmt(new VarExp("v")))));
+
         IStack<IStmt> exeStack1 = new MyStack<IStmt>();
         exeStack1.push(ex1);
         IDict<String, IValue> symTable1 = new Dict<String, IValue>();
         IDict<StringValue, BufferedReader> fileTable1 = new Dict<StringValue, BufferedReader>();
         IList<IValue> out1 = new MyList<IValue>();
-        IDict<Integer, IValue> heap1 = new Heap<IValue>();
+        IDict<Integer, IValue> heap1 = new Heap<Integer, IValue>();
         PrgState prg1 = new PrgState(exeStack1, symTable1, out1, ex1, fileTable1, heap1);
         IRepo repo1 = new Repo("log1.txt");
         repo1.addPrg(prg1);
@@ -91,7 +101,7 @@ class Interpreter {
         IDict<String, IValue> symTable2 = new Dict<String, IValue>();
         IDict<StringValue, BufferedReader> fileTable2 = new Dict<StringValue, BufferedReader>();
         IList<IValue> out2 = new MyList<IValue>();
-        IDict<Integer, IValue> heap2 = new Heap<IValue>();
+        IDict<Integer, IValue> heap2 = new Heap<Integer, IValue>();
         PrgState prg2 = new PrgState(exeStack2, symTable2, out2, ex2, fileTable2, heap2);
         IRepo repo2 = new Repo("log2.txt");
         repo2.addPrg(prg2);
@@ -102,7 +112,7 @@ class Interpreter {
         IDict<String, IValue> symTable3 = new Dict<String, IValue>();
         IDict<StringValue, BufferedReader> fileTable3 = new Dict<StringValue, BufferedReader>();
         IList<IValue> out3 = new MyList<IValue>();
-        IDict<Integer, IValue> heap3 = new Heap<IValue>();
+        IDict<Integer, IValue> heap3 = new Heap<Integer, IValue>();
         PrgState prg3 = new PrgState(exeStack3, symTable3, out3, ex3, fileTable3, heap3);
         IRepo repo3 = new Repo("log3.txt");
         repo3.addPrg(prg3);
@@ -113,7 +123,7 @@ class Interpreter {
         IDict<String, IValue> symTable4 = new Dict<String, IValue>();
         IDict<StringValue, BufferedReader> fileTable4 = new Dict<StringValue, BufferedReader>();
         IList<IValue> out4 = new MyList<IValue>();
-        IDict<Integer, IValue> heap4 = new Heap<IValue>();
+        IDict<Integer, IValue> heap4 = new Heap<Integer, IValue>();
         PrgState prg4 = new PrgState(exeStack4, symTable4, out4, ex4, fileTable4, heap4);
         IRepo repo4 = new Repo("log4.txt");
         repo4.addPrg(prg4);
@@ -124,7 +134,7 @@ class Interpreter {
         IDict<String, IValue> symTable5 = new Dict<String, IValue>();
         IDict<StringValue, BufferedReader> fileTable5 = new Dict<StringValue, BufferedReader>();
         IList<IValue> out5 = new MyList<IValue>();
-        IDict<Integer, IValue> heap5 = new Heap<IValue>();
+        IDict<Integer, IValue> heap5 = new Heap<Integer, IValue>();
         PrgState prg5 = new PrgState(exeStack5, symTable5, out5, ex5, fileTable5, heap5);
         IRepo repo5 = new Repo("log5.txt");
         repo5.addPrg(prg5);
@@ -135,7 +145,7 @@ class Interpreter {
         IDict<String, IValue> symTable6 = new Dict<String, IValue>();
         IDict<StringValue, BufferedReader> fileTable6 = new Dict<StringValue, BufferedReader>();
         IList<IValue> out6 = new MyList<IValue>();
-        IDict<Integer, IValue> heap6 = new Heap<IValue>();
+        IDict<Integer, IValue> heap6 = new Heap<Integer, IValue>();
         PrgState prg6 = new PrgState(exeStack6, symTable6, out6, ex6, fileTable6, heap6);
         IRepo repo6 = new Repo("log6.txt");
         repo6.addPrg(prg6);
@@ -146,12 +156,33 @@ class Interpreter {
         IDict<String, IValue> symTable7 = new Dict<String, IValue>();
         IDict<StringValue, BufferedReader> fileTable7 = new Dict<StringValue, BufferedReader>();
         IList<IValue> out7 = new MyList<IValue>();
-        IDict<Integer, IValue> heap7 = new Heap<IValue>();
+        IDict<Integer, IValue> heap7 = new Heap<Integer, IValue>();
         PrgState prg7 = new PrgState(exeStack7, symTable7, out7, ex7, fileTable7, heap7);
         IRepo repo7 = new Repo("log7.txt");
         repo7.addPrg(prg7);
         Controller ctr7 = new Controller(repo7);
 
+        IStack<IStmt> exeStack8 = new MyStack<IStmt>();
+        exeStack8.push(ex8);
+        IDict<String, IValue> symTable8 = new Dict<String, IValue>();
+        IDict<StringValue, BufferedReader> fileTable8 = new Dict<StringValue, BufferedReader>();
+        IList<IValue> out8 = new MyList<IValue>();
+        IDict<Integer, IValue> heap8 = new Heap<Integer, IValue>();
+        PrgState prg8 = new PrgState(exeStack8, symTable8, out8, ex8, fileTable8, heap8);
+        IRepo repo8 = new Repo("log8.txt");
+        repo8.addPrg(prg8);
+        Controller ctr8 = new Controller(repo8);
+
+        IStack<IStmt> exeStack9 = new MyStack<IStmt>();
+        exeStack9.push(ex9);
+        IDict<String, IValue> symTable9 = new Dict<String, IValue>();
+        IDict<StringValue, BufferedReader> fileTable9 = new Dict<StringValue, BufferedReader>();
+        IList<IValue> out9 = new MyList<IValue>();
+        IDict<Integer, IValue> heap9 = new Heap<Integer, IValue>();
+        PrgState prg9 = new PrgState(exeStack9, symTable9, out9, ex9, fileTable9, heap9);
+        IRepo repo9 = new Repo("log9.txt");
+        repo9.addPrg(prg9);
+        Controller ctr9 = new Controller(repo9);
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
@@ -162,6 +193,8 @@ class Interpreter {
         menu.addCommand(new RunExample("5", ex5.toString(), ctr5));
         menu.addCommand(new RunExample("6", ex6.toString(), ctr6));
         menu.addCommand(new RunExample("7", ex7.toString(), ctr7));
+        menu.addCommand(new RunExample("8", ex8.toString(), ctr8));
+        menu.addCommand(new RunExample("9", ex9.toString(), ctr9));
         menu.show();
 
     }

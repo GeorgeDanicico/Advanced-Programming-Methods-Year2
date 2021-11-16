@@ -27,7 +27,7 @@ public class WriteHeapStmt implements IStmt{
     @Override
     public PrgState execute(PrgState state) throws Exception {
         IDict<String, IValue> symTbl = state.getSymTable();
-        Heap<IValue> heapTbl = (Heap<IValue>) state.getHeapTable();
+        Heap<Integer, IValue> heapTbl = (Heap<Integer, IValue>) state.getHeapTable();
 
         if (symTbl.isDefined(variableName)) {
             IValue val = symTbl.lookup(variableName);

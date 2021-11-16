@@ -25,7 +25,7 @@ public class RelationalExp extends Exp{
     }
 
     @Override
-    public IValue eval(IDict<String, IValue> symTable, Heap<IValue> heapTable) throws Exception {
+    public IValue eval(IDict<String, IValue> symTable, Heap<Integer, IValue> heapTable) throws Exception {
         IValue v1 = e1.eval(symTable, heapTable);
 
         if (v1.getType().equals(new IntType())) {

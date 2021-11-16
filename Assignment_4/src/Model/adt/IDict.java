@@ -1,6 +1,7 @@
 package Model.adt;
 
 import java.util.Collection;
+import java.util.Map;
 
 public interface IDict<T1,T2>{
 
@@ -11,5 +12,7 @@ public interface IDict<T1,T2>{
     boolean isDefined(T1 id);
     String toString();
     String toFile();
+    void setContent(Map<T1, T2> content);
+    Map<T1, T2> getContent();
     Collection<T2> values();
 }

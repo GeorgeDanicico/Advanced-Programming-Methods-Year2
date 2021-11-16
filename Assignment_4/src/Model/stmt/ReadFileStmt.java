@@ -35,7 +35,7 @@ public class ReadFileStmt implements IStmt{
 
         IDict<String, IValue> symTbl = state.getSymTable();
         IDict<StringValue, BufferedReader>  fileTable = state.getFileTable();
-        Heap<IValue> heapTbl = (Heap<IValue>) state.getHeapTable();
+        Heap<Integer, IValue> heapTbl = (Heap<Integer, IValue>) state.getHeapTable();
 
         if (symTbl.isDefined(var_name)) {
             IValue v = symTbl.lookup(var_name);

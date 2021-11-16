@@ -18,7 +18,7 @@ public class ValueExp extends Exp {
     }
 
     @Override
-    public IValue eval(IDict<String, IValue> symTable, Heap<IValue> heapTable) throws Exception {
+    public IValue eval(IDict<String, IValue> symTable, Heap<Integer, IValue> heapTable) throws Exception {
         if (val.getType().equals(new IntType()) || val.getType().equals(new BoolType()) || val.getType().equals(new StringType())
          || val.getType() instanceof RefType) {
             return val;

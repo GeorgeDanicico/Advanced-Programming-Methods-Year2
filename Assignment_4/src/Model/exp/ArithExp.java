@@ -18,7 +18,7 @@ public class ArithExp extends Exp{
         this.e2 = _e2;
     }
 
-    public IValue eval(IDict<String, IValue> symTable, Heap<IValue> heapTable) throws Exception {
+    public IValue eval(IDict<String, IValue> symTable, Heap<Integer,IValue> heapTable) throws Exception {
 
         IValue v1 = e1.eval(symTable, heapTable);
 

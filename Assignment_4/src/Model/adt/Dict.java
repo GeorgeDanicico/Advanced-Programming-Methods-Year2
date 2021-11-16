@@ -65,6 +65,20 @@ public class Dict<T1,T2> implements IDict<T1,T2> {
     }
 
     @Override
+    public void setContent(Map<T1, T2> content) {
+        this.dictionary.clear();
+
+        for (Map.Entry<T1, T2> entry: content.entrySet()) {
+            this.dictionary.put(entry.getKey(), entry.getValue());
+        }
+    }
+
+    @Override
+    public Map<T1, T2> getContent() {
+        return this.dictionary;
+    }
+
+    @Override
     public Collection<T2> values()
     {
         return dictionary.values();

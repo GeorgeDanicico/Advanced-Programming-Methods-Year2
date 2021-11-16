@@ -3,8 +3,16 @@ import Exceptions.StackEmptyException;
 import Model.PrgState;
 import Model.adt.IStack;
 import Model.stmt.IStmt;
+import Model.types.RefType;
+import Model.value.IValue;
+import Model.value.RefValue;
 import Repo.Repo;
 import Repo.IRepo;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Controller {
 
@@ -18,6 +26,21 @@ public class Controller {
 
     public void addProgram(PrgState newPrg) {
         repo.addPrg(newPrg);
+    }
+
+    public List<Integer> getAddrFromTable(Collection<IValue> tableValues) {
+        return tableValues.stream()
+                .filter(v -> v.getType() instanceof RefType)
+                .map(v -> { RefValue v1 = (RefValue) v; return v1.getAddr();})
+                .collect(Collectors.toList());
+    }
+
+    public Map<Integer, IValue> unsafeGarbageCollector (List<Integer> symTableAddr, Map<Integer, IValue> heap) {
+        List<Integer> heapAddr = getAddrFromTable(heap.values());
+
+        return heap.entrySet().stream()
+                .filter(e -> symTableAddr.contains(e.getKey()) || heapAddr.contains(e.getKey()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
 
     public PrgState oneStep(PrgState state) throws Exception {
@@ -34,6 +57,10 @@ public class Controller {
             repo.logPrgStateExec();
             while (!stack.isEmpty()) {
                 oneStep(prg);
+                repo.logPrgStateExec();
+                prg.getHeapTable().setContent(unsafeGarbageCollector(
+                        getAddrFromTable(prg.getSymTable().values()),
+                            prg.getHeapTable().getContent()));
                 repo.logPrgStateExec();
             }
      }

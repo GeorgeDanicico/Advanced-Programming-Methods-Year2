@@ -24,7 +24,7 @@ public class PrintStmt implements IStmt{
     @Override
     public PrgState execute(PrgState state) throws Exception{
         IList<IValue> output = state.getOutput();
-        Heap<IValue> heapTbl = (Heap<IValue>) state.getHeapTable();
+        Heap<Integer, IValue> heapTbl = (Heap<Integer, IValue>) state.getHeapTable();
 
         output.add(expression.eval(state.getSymTable(), heapTbl));
         state.setOutput(output);

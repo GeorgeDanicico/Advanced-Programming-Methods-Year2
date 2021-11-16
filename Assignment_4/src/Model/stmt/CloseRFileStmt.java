@@ -29,7 +29,7 @@ public class CloseRFileStmt implements IStmt{
 
         IDict<String, IValue> symTbl = state.getSymTable();
         IDict<StringValue, BufferedReader>  fileTable = state.getFileTable();
-        Heap<IValue> heapTbl = (Heap<IValue>) state.getHeapTable();
+        Heap<Integer, IValue> heapTbl = (Heap<Integer, IValue>) state.getHeapTable();
 
         IValue condition = exp.eval(symTbl, heapTbl);
 
