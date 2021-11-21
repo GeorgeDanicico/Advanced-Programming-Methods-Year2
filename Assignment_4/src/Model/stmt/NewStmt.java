@@ -27,10 +27,12 @@ public class NewStmt implements IStmt{
         if (symTbl.isDefined(variableName)) {
             IValue val = symTbl.lookup(variableName);
             if (val.getType() instanceof RefType) {
-                IValue cond = exp.eval(symTbl, heapTbl);
+                IValue expEval = exp.eval(symTbl, heapTbl);
                 RefValue refVal = (RefValue) val;
-                if (cond.getType().equals(refVal.getLocType())) {
-                    int pos = heapTbl.add(cond);
+                if (expEval.getType().equals(refVal.getLocType())) {
+                    int pos = heapTbl.getCurrentFreeAddress();
+                    heapTbl.add(pos, expEval);
+                    heapTbl.findNextFreeAddress();
                     RefValue copyRef = (RefValue) refVal.deepCopy();
                     copyRef.setAddr(pos);
                     symTbl.update(variableName, copyRef);

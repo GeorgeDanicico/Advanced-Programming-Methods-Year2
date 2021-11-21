@@ -1,0 +1,792 @@
+----------------------------------------------------------------------------
+ExeStack: 
+
+(v = Ref(int))
+
+(new v 20)
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(v = Ref(int))
+(new v 20)
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(v = Ref(int))
+(new v 20)
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 20)
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 20)
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 20)
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 20)
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(a = Ref(Ref(int)))
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(a = Ref(Ref(int)))
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (0, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (0, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new a v)
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (0, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new a v)
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (0, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (2, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (2, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (2, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (2, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(rH(rH(a)))SymTable: 
+a -> (2, Ref(int))
+v -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+3 -> 30
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(rH(rH(a)))SymTable: 
+a -> (2, Ref(int))
+v -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+3 -> 30
+
+----------------------------------------------------------------------------
+ExeStack: 
+SymTable: 
+a -> (2, Ref(int))
+v -> (3, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+3 -> 30
+
+----------------------------------------------------------------------------
+ExeStack: 
+SymTable: 
+a -> (2, Ref(int))
+v -> (3, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+3 -> 30
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(v = Ref(int))
+
+(new v 20)
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(v = Ref(int))
+(new v 20)
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(v = Ref(int))
+(new v 20)
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 20)
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 20)
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 20)
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 20)
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(a = Ref(Ref(int)))
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(a = Ref(Ref(int)))
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(a = Ref(Ref(int)))
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (0, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new a v)
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (0, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new a v)
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (0, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new a v)
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (0, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (2, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (2, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (2, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(new v 30)
+(rH(rH(a)))SymTable: 
+a -> (2, Ref(int))
+v -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(rH(rH(a)))SymTable: 
+a -> (2, Ref(int))
+v -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+3 -> 30
+
+----------------------------------------------------------------------------
+ExeStack: 
+
+(rH(rH(a)))SymTable: 
+a -> (2, Ref(int))
+v -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+3 -> 30
+
+----------------------------------------------------------------------------
+ExeStack: 
+SymTable: 
+a -> (2, Ref(int))
+v -> (3, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+3 -> 30
+
+----------------------------------------------------------------------------
+ExeStack: 
+SymTable: 
+a -> (2, Ref(int))
+v -> (3, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> (1, int)
+3 -> 30
+

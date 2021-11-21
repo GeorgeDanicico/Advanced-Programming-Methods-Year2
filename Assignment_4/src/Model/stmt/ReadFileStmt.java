@@ -41,11 +41,11 @@ public class ReadFileStmt implements IStmt{
             IValue v = symTbl.lookup(var_name);
 
             if (v.getType().equals(new IntType())) {
-                IValue condition = exp.eval(symTbl, heapTbl);
+                IValue expEval = exp.eval(symTbl, heapTbl);
 
-                if (condition.getType().equals(new StringType())) {
+                if (expEval.getType().equals(new StringType())) {
 
-                    StringValue sv = (StringValue) condition;
+                    StringValue sv = (StringValue) expEval;
 
                     if (fileTable.isDefined(sv)) {
                         BufferedReader reader = fileTable.lookup(sv);

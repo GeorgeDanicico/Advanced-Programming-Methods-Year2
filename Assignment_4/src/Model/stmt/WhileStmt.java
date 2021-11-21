@@ -28,10 +28,10 @@ public class WhileStmt implements IStmt{
         Heap<Integer, IValue> heapTbl = (Heap<Integer, IValue>) state.getHeapTable();
         IStack<IStmt> stack = state.getStack();
 
-        IValue val = exp.eval(symTbl, heapTbl);
+        IValue expEval = exp.eval(symTbl, heapTbl);
 
-        if (val.getType().equals(new BoolType())) {
-            BoolValue bV = (BoolValue) val;
+        if (expEval.getType().equals(new BoolType())) {
+            BoolValue bV = (BoolValue) expEval;
             if (bV.getValue()) {
                 IStmt copyWhile = new WhileStmt(exp, stmt);
                 stack.push(copyWhile);

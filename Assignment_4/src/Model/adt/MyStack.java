@@ -25,16 +25,16 @@ public class MyStack<T> implements IStack<T>{
             IStmt right_branch = ((CompStmt) stmt).getSecond();
 
             if (left_branch instanceof CompStmt) {
-                result += inOrderTraversal(left_branch) + '\n';
-            } else result += left_branch.toString() + '\n';
+                result += '\n' + inOrderTraversal(left_branch);
+            } else result += '\n' + left_branch.toString();
 
             if (right_branch instanceof CompStmt) {
-                result += inOrderTraversal(right_branch) + '\n';
-            } else result += right_branch.toString() + '\n';
+                result += '\n' + inOrderTraversal(right_branch);
+            } else result += '\n' + right_branch.toString();
 
             return result;
 
-        } else return stmt.toString();
+        } else return '\n' + stmt.toString();
     }
 
     @Override
@@ -68,7 +68,7 @@ public class MyStack<T> implements IStack<T>{
             while (!copyStack.isEmpty()) {
                 T elem = copyStack.pop();
                 if (elem instanceof IStmt)
-                    result += inOrderTraversal((IStmt) elem) + '\n';
+                    result += inOrderTraversal((IStmt) elem);
             }
         } catch (Exception e) {
 
