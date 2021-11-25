@@ -62,6 +62,13 @@ public class Controller {
         List<PrgState> prgList = removeCompletedPrg(list.getAll());
 
         while (prgList.size() > 0) {
+
+            for (PrgState prg : prgList) {
+                prg.getHeapTable().setContent(GarbageCollector.safeGarbageCollector(
+                        GarbageCollector.getAddrFromTable(prg.getSymTable().values()),
+                                prg.getHeapTable().getContent()));
+            }
+
             oneStepForAllPrg(prgList);
 
             list = repo.getPrgList();
