@@ -106,4 +106,13 @@ public class Controller {
          IList<PrgState> copyPrgList = new MyList<>(prgList);
          repo.setPrgList(copyPrgList);
      }
+
+     public String toString() {
+        try {
+            return this.repo.getPrgList().get(0).getStack().toString();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return "";
+        }
+     }
 }
