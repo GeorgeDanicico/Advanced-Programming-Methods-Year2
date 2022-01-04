@@ -1,0 +1,24 @@
+.main-container {
+    -fx-alignment: center;
+    -fx-background-color: teal;
+}
+
+.button {
+    -fx-alignment: center;
+    -fx-border-radius: 50px;
+    -fx-background-radius:50px;
+    -fx-padding: 25px;
+    -fx-width: 50px;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+}
+
+.container {
+    -fx-alignment: center;
+}
+
+.list {
+    -fx-background-color: teal;
+    -fx-alignment: center;
+}

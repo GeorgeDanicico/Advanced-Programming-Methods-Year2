@@ -27,7 +27,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import javafx.util.Callback;
@@ -126,9 +128,28 @@ public class PrgListController implements Initializable {
                 stmt.typecheck(typeEnv);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+
+                alert.setTitle("Toy Language - Current program finished");
+                alert.setHeaderText(null);
+                alert.setContentText("The types aren't valid!");
+                Button confirm = (Button) alert.getDialogPane().lookupButton( ButtonType.OK );
+                confirm.setDefaultButton(false);
+                confirm.setStyle("-fx-focus-color: transparent; -fx-faint-focus-color: transparent;");
+                alert.showAndWait();
+
                 System.exit(1);
             }
         }
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Toy Language - Current program finished");
+        alert.setHeaderText(null);
+        alert.setContentText("Program compiled successfully!");
+        Button confirm = (Button) alert.getDialogPane().lookupButton( ButtonType.OK );
+        confirm.setDefaultButton(false);
+        confirm.setStyle("-fx-focus-color: transparent; -fx-faint-focus-color: transparent;");
+        alert.showAndWait();
 
         for (int i = 0; i < 10; i++) {
             String filename = "log" + i + ".txt";
@@ -153,7 +174,6 @@ public class PrgListController implements Initializable {
 
         this.setUp(myData);
         myPrgList.setItems(myData);
-        System.out.println(myData.toString());
 
         myPrgList.getSelectionModel().selectFirst();
         runButton.setOnAction(new EventHandler<ActionEvent>() {

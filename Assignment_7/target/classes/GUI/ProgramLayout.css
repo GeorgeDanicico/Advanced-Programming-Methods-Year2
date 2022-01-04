@@ -1,0 +1,14 @@
+.main-container {
+    -fx-background-color: teal;
+    -fx-text-fill: white;
+}
+
+.font-color {
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-background-radius: 50px;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
