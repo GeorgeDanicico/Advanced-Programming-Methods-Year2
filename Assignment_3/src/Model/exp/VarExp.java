@@ -11,7 +11,7 @@ public class VarExp extends Exp{
     }
 //TODO ASK TEACHER
     public IValue eval(IDict<String, IValue> symTable) throws Exception {
-        return symTable.lookup(id);
+        return symTable.lookup(id).deepCopy();
     }
 
     public String toString() {

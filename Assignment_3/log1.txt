@@ -1,5 +1,8 @@
 ExeStack: 
-((v = int); (v=2; (v)))
+(v = int)
+v=2
+(v)
+
 
 SymTable: 
 
@@ -10,20 +13,10 @@ FileTable:
 
 ExeStack: 
 (v = int)
-(v=2; (v))
+v=2
+(v)
 
 SymTable: 
-
-Out: 
-
-FileTable: 
-
-
-ExeStack: 
-(v=2; (v))
-
-SymTable: 
-v -> 0
 
 Out: 
 
@@ -43,8 +36,18 @@ FileTable:
 
 
 ExeStack: 
+v=2
 (v)
+SymTable: 
+v -> 0
 
+Out: 
+
+FileTable: 
+
+
+ExeStack: 
+(v)
 SymTable: 
 v -> 2
 
@@ -54,7 +57,6 @@ FileTable:
 
 
 ExeStack: 
-
 SymTable: 
 v -> 2
 

@@ -43,7 +43,7 @@ public class OpenRFileStmt implements IStmt{
                 try {
                     reader = new BufferedReader(new FileReader(sv.getValue()));
                 } catch (IOException e) {
-                    throw new FileNotExistsException(e.getMessage());
+                    throw new FileNotExistsException("An error occured with the file descriptor.");
                 }
 
                 fileTable.add(sv, reader);

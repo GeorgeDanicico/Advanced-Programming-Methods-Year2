@@ -12,6 +12,14 @@ public class CompStmt implements IStmt{
         second = _second;
     }
 
+    public IStmt getFirst() {
+        return this.first;
+    }
+
+    public IStmt getSecond() {
+        return this.second;
+    }
+
     @Override
     public String toString() {
         return "(" + first.toString() + "; "+ second.toString() + ")";

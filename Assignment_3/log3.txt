@@ -1,279 +1,131 @@
 ExeStack: 
-[((a = bool); ((v = int); (a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v)))))]
+((a = bool); ((v = int); (a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v)))))
+
 SymTable: 
-{}
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[((v = int); (a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v)))), (a = bool)]
+(a = bool)
+((v = int); (a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v))))
+
 SymTable: 
-{}
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[((v = int); (a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v))))]
+((v = int); (a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v))))
+
 SymTable: 
-{a=false}
+a -> false
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[(a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v))), (v = int)]
+(v = int)
+(a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v)))
+
 SymTable: 
-{a=false}
+a -> false
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[(a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v)))]
+(a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v)))
+
 SymTable: 
-{a=false, v=0}
+a -> false
+v -> 0
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[((IF(a)THEN(v=2)ELSE(v=3; (v)), a=true]
+a=true
+((IF(a)THEN(v=2)ELSE(v=3; (v))
+
 SymTable: 
-{a=false, v=0}
+a -> false
+v -> 0
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[((IF(a)THEN(v=2)ELSE(v=3; (v))]
+((IF(a)THEN(v=2)ELSE(v=3; (v))
+
 SymTable: 
-{a=true, v=0}
+a -> true
+v -> 0
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[(v), (IF(a)THEN(v=2)ELSE(v=3]
+(IF(a)THEN(v=2)ELSE(v=3
+(v)
+
 SymTable: 
-{a=true, v=0}
+a -> true
+v -> 0
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[(v), v=2]
+v=2
+(v)
+
 SymTable: 
-{a=true, v=0}
+a -> true
+v -> 0
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[(v)]
+(v)
+
 SymTable: 
-{a=true, v=2}
+a -> true
+v -> 2
+
 Out: 
-[]
+
 FileTable: 
-{}
+
 
 ExeStack: 
-[]
-SymTable: 
-{a=true, v=2}
-Out: 
-[2]
-FileTable: 
-{}
 
-ExeStack: 
-[((varf = string); varf=test.in)]
 SymTable: 
-{}
-Out: 
-[]
-FileTable: 
-{}
+a -> true
+v -> 2
 
-ExeStack: 
-[varf=test.in, (varf = string)]
-SymTable: 
-{}
 Out: 
-[]
-FileTable: 
-{}
+2
 
-ExeStack: 
-[varf=test.in]
-SymTable: 
-{varf=}
-Out: 
-[]
 FileTable: 
-{}
 
-ExeStack: 
-[((varf = string); varf=test.in)]
-SymTable: 
-{}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[varf=test.in, (varf = string)]
-SymTable: 
-{}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[varf=test.in]
-SymTable: 
-{varf=}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[((varf = string); varf=test.in)]
-SymTable: 
-{}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[varf=test.in, (varf = string)]
-SymTable: 
-{}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[varf=test.in]
-SymTable: 
-{varf=}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[((a = bool); ((v = int); (a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v)))))]
-SymTable: 
-{}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[((v = int); (a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v)))), (a = bool)]
-SymTable: 
-{}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[((v = int); (a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v))))]
-SymTable: 
-{a=false}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[(a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v))), (v = int)]
-SymTable: 
-{a=false}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[(a=true; ((IF(a)THEN(v=2)ELSE(v=3; (v)))]
-SymTable: 
-{a=false, v=0}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[((IF(a)THEN(v=2)ELSE(v=3; (v)), a=true]
-SymTable: 
-{a=false, v=0}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[((IF(a)THEN(v=2)ELSE(v=3; (v))]
-SymTable: 
-{a=true, v=0}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[(v), (IF(a)THEN(v=2)ELSE(v=3]
-SymTable: 
-{a=true, v=0}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[(v), v=2]
-SymTable: 
-{a=true, v=0}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[(v)]
-SymTable: 
-{a=true, v=2}
-Out: 
-[]
-FileTable: 
-{}
-
-ExeStack: 
-[]
-SymTable: 
-{a=true, v=2}
-Out: 
-[2]
-FileTable: 
-{}
 

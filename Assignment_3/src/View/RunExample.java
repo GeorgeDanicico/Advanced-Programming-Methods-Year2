@@ -15,7 +15,7 @@ public class RunExample extends Command {
         try {
             ctr.allStep();
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println(e.toString());
         }
     }
 }

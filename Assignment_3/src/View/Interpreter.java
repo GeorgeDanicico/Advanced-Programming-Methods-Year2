@@ -101,6 +101,7 @@ class Interpreter {
         menu.addCommand(new RunExample("2", ex2.toString(), ctr2));
         menu.addCommand(new RunExample("3", ex3.toString(), ctr3));
         menu.addCommand(new RunExample("4", ex4.toString(), ctr4));
-        menu.show();
+         menu.show();
+
     }
 }

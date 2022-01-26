@@ -3,6 +3,7 @@ import Model.adt.IDict;
 import Model.adt.IList;
 import Model.adt.IStack;
 import Model.adt.MyList;
+import Model.stmt.CompStmt;
 import Model.stmt.IStmt;
 import Model.value.IValue;
 import Model.value.StringValue;
@@ -48,7 +49,7 @@ public class PrgState {
     }
 
     public String toFile() {
-        return "ExeStack: \n" + exeStack.toFile() + "\n" + "SymTable: \n" + symTable.toFile() + "\n" +
+        return "ExeStack: \n" + exeStack.toFile() + "SymTable: \n" + symTable.toFile() + "\n" +
                 "Out: \n" + out.toFile() + "\n" + "FileTable: \n" + fileTable.toFile() + "\n\n";
     }
 }
