@@ -1,0 +1,842 @@
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(v1 = Ref(int))
+(v2 = Ref(int))
+(v3 = Ref(int))
+(new v1 2)
+(new v2 3)
+(new v3 4)
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(v2 = Ref(int))
+(v3 = Ref(int))
+(new v1 2)
+(new v2 3)
+(new v3 4)
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+v1 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(v2 = Ref(int))
+(v3 = Ref(int))
+(new v1 2)
+(new v2 3)
+(new v3 4)
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+v1 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(v3 = Ref(int))
+(new v1 2)
+(new v2 3)
+(new v3 4)
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+v1 -> (0, int)
+v2 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(v3 = Ref(int))
+(new v1 2)
+(new v2 3)
+(new v3 4)
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+v1 -> (0, int)
+v2 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(new v1 2)
+(new v2 3)
+(new v3 4)
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+v1 -> (0, int)
+v2 -> (0, int)
+v3 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(new v1 2)
+(new v2 3)
+(new v3 4)
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+v1 -> (0, int)
+v2 -> (0, int)
+v3 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(new v2 3)
+(new v3 4)
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (0, int)
+v3 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(new v2 3)
+(new v3 4)
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (0, int)
+v3 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(new v3 4)
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(new v3 4)
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(cnt = int)
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+newBarrier(cnt; rH(v2))
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+fork((awaitBarrier(cnt); (wH(v1 = rH(v1) * 10); (rH(v1)))))
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+awaitBarrier(cnt)
+wH(v1 = rH(v1) * 10)
+(rH(v1))
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+fork((awaitBarrier(cnt); (wH(v2 = rH(v2) * 10); (wH(v2 = rH(v2) * 10); (rH(v2))))))
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+awaitBarrier(cnt)
+wH(v1 = rH(v1) * 10)
+(rH(v1))
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+wH(v1 = rH(v1) * 10)
+(rH(v1))
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+awaitBarrier(cnt)
+wH(v2 = rH(v2) * 10)
+wH(v2 = rH(v2) * 10)
+(rH(v2))
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+awaitBarrier(cnt)
+(v3)
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+wH(v1 = rH(v1) * 10)
+(rH(v1))
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+awaitBarrier(cnt)
+wH(v2 = rH(v2) * 10)
+wH(v2 = rH(v2) * 10)
+(rH(v2))
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(v3)
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+(rH(v1))
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+wH(v2 = rH(v2) * 10)
+wH(v2 = rH(v2) * 10)
+(rH(v2))
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+(3, int)
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+(3, int)
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+wH(v2 = rH(v2) * 10)
+wH(v2 = rH(v2) * 10)
+(rH(v2))
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+(3, int)
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+wH(v2 = rH(v2) * 10)
+(rH(v2))
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+(3, int)
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+wH(v2 = rH(v2) * 10)
+(rH(v2))
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+(3, int)
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+(rH(v2))
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+(3, int)
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 300
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+(3, int)
+20
+300
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 300
+3 -> 4
+

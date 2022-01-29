@@ -1,0 +1,1118 @@
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+(v1 = Ref(int))
+(cnt = int)
+(new v1 2)
+newToySemaphore(cnt; rH(v1); 1)
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); ((rH(v1)); releaseToy(cnt)))))
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); (wH(v1 = rH(v1) * 2); ((rH(v1)); releaseToy(cnt))))))
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+(cnt = int)
+(new v1 2)
+newToySemaphore(cnt; rH(v1); 1)
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); ((rH(v1)); releaseToy(cnt)))))
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); (wH(v1 = rH(v1) * 2); ((rH(v1)); releaseToy(cnt))))))
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+v1 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+(cnt = int)
+(new v1 2)
+newToySemaphore(cnt; rH(v1); 1)
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); ((rH(v1)); releaseToy(cnt)))))
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); (wH(v1 = rH(v1) * 2); ((rH(v1)); releaseToy(cnt))))))
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+v1 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+(new v1 2)
+newToySemaphore(cnt; rH(v1); 1)
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); ((rH(v1)); releaseToy(cnt)))))
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); (wH(v1 = rH(v1) * 2); ((rH(v1)); releaseToy(cnt))))))
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 0
+v1 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+(new v1 2)
+newToySemaphore(cnt; rH(v1); 1)
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); ((rH(v1)); releaseToy(cnt)))))
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); (wH(v1 = rH(v1) * 2); ((rH(v1)); releaseToy(cnt))))))
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 0
+v1 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+newToySemaphore(cnt; rH(v1); 1)
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); ((rH(v1)); releaseToy(cnt)))))
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); (wH(v1 = rH(v1) * 2); ((rH(v1)); releaseToy(cnt))))))
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+newToySemaphore(cnt; rH(v1); 1)
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); ((rH(v1)); releaseToy(cnt)))))
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); (wH(v1 = rH(v1) * 2); ((rH(v1)); releaseToy(cnt))))))
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 0
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); ((rH(v1)); releaseToy(cnt)))))
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); (wH(v1 = rH(v1) * 2); ((rH(v1)); releaseToy(cnt))))))
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); ((rH(v1)); releaseToy(cnt)))))
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); (wH(v1 = rH(v1) * 2); ((rH(v1)); releaseToy(cnt))))))
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); (wH(v1 = rH(v1) * 2); ((rH(v1)); releaseToy(cnt))))))
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+fork((acquireToy(cnt); (wH(v1 = rH(v1) * 10); (wH(v1 = rH(v1) * 2); ((rH(v1)); releaseToy(cnt))))))
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+wH(v1 = rH(v1) * 10)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+wH(v1 = rH(v1) * 10)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:20
+ExeStack:
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+acquireToy(cnt)
+(rH(v1) - 1)
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+
+----------------------------------------------------------------------------
+Thread ID:21
+ExeStack:
+acquireToy(cnt)
+wH(v1 = rH(v1) * 10)
+wH(v1 = rH(v1) * 2)
+(rH(v1))
+releaseToy(cnt)
+
+SymTable: 
+cnt -> 1
+v1 -> (1, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+

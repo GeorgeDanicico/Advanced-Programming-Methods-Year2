@@ -1,0 +1,1047 @@
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(v1 = Ref(int))
+(v2 = Ref(int))
+(v3 = Ref(int))
+(new v1 2)
+(new v2 3)
+(new v3 4)
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(v2 = Ref(int))
+(v3 = Ref(int))
+(new v1 2)
+(new v2 3)
+(new v3 4)
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(v2 = Ref(int))
+(v3 = Ref(int))
+(new v1 2)
+(new v2 3)
+(new v3 4)
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(v3 = Ref(int))
+(new v1 2)
+(new v2 3)
+(new v3 4)
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (0, int)
+v2 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(v3 = Ref(int))
+(new v1 2)
+(new v2 3)
+(new v3 4)
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (0, int)
+v2 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(new v1 2)
+(new v2 3)
+(new v3 4)
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (0, int)
+v2 -> (0, int)
+v3 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(new v1 2)
+(new v2 3)
+(new v3 4)
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (0, int)
+v2 -> (0, int)
+v3 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(new v2 3)
+(new v3 4)
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (0, int)
+v3 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(new v2 3)
+(new v3 4)
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (0, int)
+v3 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(new v3 4)
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(new v3 4)
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (0, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+newLatch(vnt; rH(v2))
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+fork((wH(v1 = rH(v1) * 10); ((rH(v1)); countDown(cnt))))
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:17
+ExeStack:
+wH(v1 = rH(v1) * 10)
+(rH(v1))
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+fork((wH(v2 = rH(v2) * 10); ((rH(v2)); countDown(cnt))))
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:17
+ExeStack:
+wH(v1 = rH(v1) * 10)
+(rH(v1))
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 2
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:17
+ExeStack:
+(rH(v1))
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+wH(v2 = rH(v2) * 10)
+(rH(v2))
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+fork((wH(v3 = rH(v3) * 10); ((rH(v3)); countDown(cnt))))
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:17
+ExeStack:
+(rH(v1))
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+wH(v2 = rH(v2) * 10)
+(rH(v2))
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 3
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:17
+ExeStack:
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(rH(v2))
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+wH(v3 = rH(v3) * 10)
+(rH(v3))
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+await(cnt)
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:17
+ExeStack:
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+(rH(v2))
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+wH(v3 = rH(v3) * 10)
+(rH(v3))
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 4
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+30
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 40
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+30
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 40
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+(rH(v3))
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+30
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 40
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(100)
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+30
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 40
+
+----------------------------------------------------------------------------
+Thread ID:18
+ExeStack:
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+30
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 40
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+(rH(v3))
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+30
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 40
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+30
+100
+40
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 40
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+countDown(cnt)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+30
+100
+40
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 40
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+countDown(cnt)
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+30
+100
+40
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 40
+
+----------------------------------------------------------------------------
+Thread ID:19
+ExeStack:
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+30
+100
+40
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 40
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+(100)
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+30
+100
+40
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 40
+
+----------------------------------------------------------------------------
+Thread ID:16
+ExeStack:
+
+SymTable: 
+v1 -> (1, int)
+v2 -> (2, int)
+v3 -> (3, int)
+
+Out: 
+20
+30
+100
+40
+100
+
+FileTable: 
+
+Heap: 
+1 -> 20
+2 -> 30
+3 -> 40
+
